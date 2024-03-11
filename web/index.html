@@ -40,6 +40,27 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+  <!-- Firebase SDK setup -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC54aDEE2pp3RbP8PGsSJRefkOysZa1qaY",
+      authDomain: "idx-webapp.firebaseapp.com",
+      projectId: "idx-webapp",
+      storageBucket: "idx-webapp.appspot.com",
+      messagingSenderId: "73295910748",
+      appId: "1:73295910748:web:9f0ca30cae95d54fa91399"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -55,5 +76,6 @@
       });
     });
   </script>
+
 </body>
 </html>
