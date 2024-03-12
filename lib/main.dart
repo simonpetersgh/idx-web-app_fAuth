@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/login_page.dart';
+import 'package:myapp/pages/auth_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 // import 'firebase_options.dart';
 
@@ -22,7 +22,7 @@ void main() async {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LoginPage(),
+      home: const AuthLogic(),
       debugShowCheckedModeBanner: false,
     ),
   );
